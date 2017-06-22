@@ -1,10 +1,69 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Portfolio | William Peterson</title>
-	</head>
-	<body>
-		<p>Hello world!</p>
-	</body>
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio | William Peterson</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="portfolio.css" >
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+			console.log("document ready")
+			$('.collapse').on('show.bs.collapse', function (e) {
+				console.log("removing");
+				$('.collapse').not(e.target).collapse("hide");
+			})
+		})
+	</script>
+</head>
+<body>
+	<div class="container">
+		<ul class="nav nav-pills" role="tablist">
+			<li class="active"><a href="/">Home</a></li>
+			<li><a href="#">About Me</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">Github</a></li>
+		</ul>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>William Peterson | Web Developer</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis nunc mauris. Suspendisse sodales tellus molestie, fermentum velit non, rhoncus metus. Pellentesque sed turpis ullamcorper, scelerisque augue a, pellentesque nisi. Donec neque nibh, tincidunt sodales tempor ut, pellentesque a sem. Morbi dignissim lorem a sapien condimentum vestibulum. Fusce elementum mi vitae vulputate auctor. Nullam finibus nisi eget magna auctor bibendum. Quisque volutpat dolor sed purus varius, eu blandit enim semper.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Projects</h3>
+			</div>
+		</div>
+			<div class="row projects">
+				<a data-toggle="collapse" href="#msr_text">
+					<div class="col-md-6">
+						<h4>Maybe Spring Rolls</h4>
+						<img src="image/msr_demo.jpg" alt="Maybe Spring Rolls - Map With Taco Time" style="width: 100%;">
+					</div>
+				</a>
+				<a data-toggle="collapse" href="#cc_text">
+					<div class="col-md-6">
+						<h4>Cow Chucker</h4>
+						<img src="image/cc_03.jpg" alt="Cow Chucker" style="width: 100%;">
+					</div>
+				</a>
+			</div>
+			<div class="row collapse" id="msr_text">
+				<div class="col-md-12">
+					<img src="image/python.svg" alt="Python" class="icon img-circle">
+					<img src="image/django.png" alt="Django" class="icon img-circle">
+					<img src="image/javascript.png" alt="Javascript" class="icon img-circle">
+					<p>Maybe Spring Rolls is an application that decides where to eat for you. The goal of the project was to solve the problem of indecisiveness at dinner time. You can set parameters such as the distance you're willing to travel and the type of food you're in the mood for and it will randomly choose a location using the Google Places API.  You can also log in and store a list of meals you can make at home so that in case you've been too picky it will choose something you can make at home.</p>
+					<p><a href="https://54.202.120.132/" target="_blank">Check it out!</a></p>
+				</div>
+			</div>
+			<div class="row collapse" id="cc_text">
+				<div class="col-md-12">
+					<p>Stuff about Cow Chucker</p>
+				</div>
+			</div>
+	</div>
+</body>
 </html>
