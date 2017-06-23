@@ -39,6 +39,19 @@ h2 {
 	margin: 5px;
 }
 
+.previewGif {
+	width: 100%;
+	border: 1px solid #666699;
+}
+
+.preview {
+	width: 100%;
+}
+
+.modal-body .row {
+	margin-bottom: 10px;
+}
+
 @media screen and (max-width: 768px) {
 	.icon {
 		width: 30px;

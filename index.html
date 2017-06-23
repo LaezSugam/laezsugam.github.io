@@ -8,13 +8,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script>
-		$(document).ready(function(){
-			console.log("document ready")
-			$('.collapse').on('show.bs.collapse', function (e) {
-				console.log("removing");
-				$('.collapse').not(e.target).collapse("hide");
-			})
+	$(document).ready(function(){
+		console.log("document ready")
+		$('.collapse').on('show.bs.collapse', function (e) {
+			console.log("removing");
+			$('.collapse').not(e.target).collapse("hide");
 		})
+	})
 	</script>
 </head>
 <body>
@@ -34,44 +34,107 @@
 		<div class="row">
 			<div class="col-md-12">
 				<h3>Projects</h3>
-				<h4>Maybe Spring Rolls</h4>
 			</div>
 		</div>
-			<div class="row projects">
-					<div class="col-sm-6">
-						<img src="image/msr_demo.jpg" alt="Maybe Spring Rolls - Map With Taco Time" style="width: 100%;">
-					</div>
-					<div class="col-sm-6">
-						<p>Maybe Spring Rolls is an application that decides where to eat for you. The goal of the project was to solve the problem of indecisiveness at dinner time. You can set parameters such as the distance you're willing to travel and the type of food you're in the mood for and it will randomly choose a location using the Google Places API.  You can also log in and store a list of meals you can make at home so that in case you've been too picky it will choose something you can make at home.</p>
-						<p><a href="https://54.202.120.132/" target="_blank">Check it out!</a></p>
-						<img src="image/python.svg" alt="Python" class="icon img-rounded">
-						<img src="image/django.png" alt="Django" class="icon img-rounded">
-						<img src="image/javascript.png" alt="Javascript" class="icon img-rounded">
-						<img src="image/google_maps.png" alt="Google Maps" class="icon img-rounded">
-						<img src="image/google_places.svg" alt="Google Places" class="icon img-rounded">
-						<img src="image/mysql.png" alt="MySQL" class="icon img-rounded">
-						<img src="image/html5.svg" alt="HTML" class="icon img-rounded">
-						<img src="image/css.svg" alt="CSS" class="icon img-rounded">
-						<img src="image/jquery.png" alt="jQuery" class="icon img-rounded">
-					</div>
-			</div>
-			<div class="row">
+		<div class="row projects">
+			<a data-toggle="modal" href="#msr_text">
 				<div class="col-sm-6">
-
+					<h4>Maybe Spring Rolls</h4>
+					<img src="image/msr_demo.jpg" alt="Maybe Spring Rolls - Map With Taco Time" class="preview">
 				</div>
+			</a>
+			<a data-toggle="modal" href="#cc_text">
 				<div class="col-sm-6">
-
 					<h4>Cow Chucker</h4>
+					<img src="image/cc_03.jpg" alt="Cow Chucker" class="preview">
 				</div>
-			</div>
-			<div class="row projects">
-					<div class="col-sm-6">
-						<p>Stuff about Cow Chucker</p>
+			</a>
+			<div id="msr_text" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Maybe Spring Rolls</h4>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-sm-6">
+									<img src="image/msr_animation.gif" alt="Maybe Spring Rolls Animated GIF" class="previewGif">
+								</div>
+								<div class="col-sm-6">
+									<p>Maybe Spring Rolls is an application that decides where to eat for you. The goal of the project was to solve the problem of indecisiveness at dinner time. You can set parameters such as the distance you're willing to travel and the type of food you're in the mood for and it will randomly choose a location using the Google Places API.  You can also log in and store a list of meals you can make at home so that in case you've been too picky it will choose something you can make at home.</p>
+									<p><a href="https://54.202.120.132/" target="_blank">Check it out!</a></p>
+
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<img src="image/python.svg" alt="Python" class="icon img-rounded">
+									<img src="image/django.png" alt="Django" class="icon img-rounded">
+									<img src="image/javascript.png" alt="Javascript" class="icon img-rounded">
+									<img src="image/google_maps.png" alt="Google Maps" class="icon img-rounded">
+									<img src="image/google_places.svg" alt="Google Places" class="icon img-rounded">
+									<img src="image/mysql.png" alt="MySQL" class="icon img-rounded">
+									<img src="image/html5.svg" alt="HTML" class="icon img-rounded">
+									<img src="image/css.svg" alt="CSS" class="icon img-rounded">
+									<img src="image/jquery.png" alt="jQuery" class="icon img-rounded">
+								</div>
+							</div>
+
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
 					</div>
-					<div class="col-sm-6">
-						<img src="image/cc_03.jpg" alt="Cow Chucker" style="width: 100%;">
-					</div>
+				</div>
+
 			</div>
+			<div id="cc_text" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Cow Chucker</h4>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-sm-6">
+									<img src="image/cc_animation.gif" alt="Cow Chucker Animated GIF" class="previewGif">
+								</div>
+								<div class="col-sm-6">
+									<p>Cow Chucker is a game about shooting cows at Coding Dojo instructors. For this project I worked with a team and was responsible for cannon mechanics, cameras and general direction.</p>
+									<p><strong>Controls:</strong><br />
+									Arrow Keys: Aim<br />
+									Ctrl: Press to build thrust, release to shoot<br />
+									C: Return to cannon</p>
+									<p>Give it a try! <a href="https://drive.google.com/open?id=0ByahWbJKxTQYZmZQMm1nRnduSE0" target="_blank">Windows 32-bit</a> | <a href="https://drive.google.com/file/d/0ByahWbJKxTQYVjRZdkYtTE1VbHM/view?usp=sharing" target="_blank">Windows 64-bit</a> | <a href="https://drive.google.com/open?id=0ByahWbJKxTQYYVoyeWdEM09wOW8" target="_blank">Mac OSX</a></p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<img src="image/python.svg" alt="Python" class="icon img-rounded">
+									<img src="image/django.png" alt="Django" class="icon img-rounded">
+									<img src="image/javascript.png" alt="Javascript" class="icon img-rounded">
+									<img src="image/google_maps.png" alt="Google Maps" class="icon img-rounded">
+									<img src="image/google_places.svg" alt="Google Places" class="icon img-rounded">
+									<img src="image/mysql.png" alt="MySQL" class="icon img-rounded">
+									<img src="image/html5.svg" alt="HTML" class="icon img-rounded">
+									<img src="image/css.svg" alt="CSS" class="icon img-rounded">
+									<img src="image/jquery.png" alt="jQuery" class="icon img-rounded">
+								</div>
+							</div>
+
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
 	</div>
 </body>
 </html>
