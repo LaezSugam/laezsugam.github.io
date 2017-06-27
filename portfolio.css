@@ -1,5 +1,6 @@
 body {
 	background-color: gray;
+	padding-top: 50px;
 }
 
 .container {
@@ -7,7 +8,7 @@ body {
 	padding: 0;
 }
 
-.nav {
+.navbar, .nav {
 	background-color:  #b3b3cc;
 }
 
@@ -42,6 +43,12 @@ h2 {
 .previewGif {
 	width: 100%;
 	border: 1px solid #666699;
+	margin-bottom: 10px;
+}
+
+.section {
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .preview {
