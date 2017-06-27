@@ -1,6 +1,6 @@
 body {
 	background-color: gray;
-	padding-top: 50px;
+	padding-top: 40px;
 }
 
 .container {
@@ -10,6 +10,11 @@ body {
 
 .navbar, .nav {
 	background-color:  #b3b3cc;
+}
+
+.navbar {
+	border: none;
+	min-height: 40px;
 }
 
 .nav-pills li a {
@@ -49,6 +54,11 @@ h2 {
 .section {
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+
+#home {
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 .preview {
