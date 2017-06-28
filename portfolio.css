@@ -29,6 +29,11 @@ h2 {
 	text-align: center;
 }
 
+h3 {
+	background-color: #b3b3cc;
+	padding: 5px;
+}
+
 .row {
 	margin-left: 5px;
 	margin-right: 5px;
