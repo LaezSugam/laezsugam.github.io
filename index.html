@@ -16,8 +16,8 @@
 		})
 
 		$(".nav a").on("click", function(){
-		   $(".nav").find(".active").removeClass("active");
-		   $(this).parent().addClass("active");
+			$(".nav").find(".active").removeClass("active");
+			$(this).parent().addClass("active");
 		});
 	})
 	</script>
@@ -26,15 +26,15 @@
 <body>
 
 	<nav class="navbar navbar-default navbar-fixed-top">
-	  <div class="container">
-		  <ul class="nav nav-pills" role="tablist">
-			 <li class="active"><a href="#home" >Home</a></li>
-  			<li><a href="#projects">Projects</a></li>
-  			<li><a href="#technologies">Technologies</a></li>
-  			<li><a href="#about_me">About Me</a></li>
-  			<!-- <li><a href="https://github.com/LaezSugam" target="_blank">GitHub</a></li> -->
-  		</ul>
-	  </div>
+		<div class="container">
+			<ul class="nav nav-pills" role="tablist">
+				<li class="active"><a href="#home" >Home</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#technologies">Technologies</a></li>
+				<li><a href="#about_me">About Me</a></li>
+				<!-- <li><a href="https://github.com/LaezSugam" target="_blank">GitHub</a></li> -->
+			</ul>
+		</div>
 	</nav>
 	<a name="home"></a>
 	<div class="container">
@@ -54,6 +54,12 @@
 				</div>
 			</div>
 			<div class="row">
+				<a data-toggle="modal" href="#sc_text">
+					<div class="col-sm-4">
+						<h4>SkyCast</h4>
+						<img src="image/skycast.jpg" alt="Lights Out" class="preview">
+					</div>
+				</a>
 				<a data-toggle="modal" href="#msr_text">
 					<div class="col-sm-4">
 						<h4>Maybe Spring Rolls</h4>
@@ -66,13 +72,49 @@
 						<img src="image/cc_03.jpg" alt="Cow Chucker" class="preview">
 					</div>
 				</a>
-				<a data-toggle="modal" href="#lo_text">
-					<div class="col-sm-4">
-						<h4>Lights Out</h4>
-						<img src="image/lo_01.jpg" alt="Lights Out" class="preview">
+
+				<div id="sc_text" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">SkyCast</h4>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-sm-6">
+										<img src="image/sc_animation.gif" alt="SkyCast Animated GIF" class="previewGif">
+									</div>
+									<div class="col-sm-6">
+										<p>SkyCast is a weather forecast app created using the <a href="https://darksky.net/dev" target="_blank">Dark Sky API</a> and the <a href="https://developers.google.com/apis-explorer/#p/" target="_blank">Google Maps, Google Geolocation, and Google Geocoding APIs</a>. To render the charts I used the <a href="https://valor-software.com/ng2-charts/" target="_blank">ng2-charts</a> library. Using the app you can get today, tomorrow, and next week's forecast either for your location or a searched location, or you can do a search of historic data to see the weather for a specific place and date.</p>
+										<p><a href="https://intense-castle-51563.herokuapp.com" target="_blank">Check it out!</a> | <a href="https://github.com/LaezSugam/SkyCast" target="_blank">GitHub</a></p>
+
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<img src="image/javascript.png" title="JavaScript" alt="JavaScript" class="icon img-rounded">
+										<img src="image/html5.svg" title="HTML" alt="HTML" class="icon img-rounded">
+										<img src="image/css.svg" title="CSS" alt="CSS" class="icon img-rounded">
+										<img src="image/node.png" title="Node.js" alt="Node.js" class="icon img-rounded">
+										<img src="image/express.svg" title="Express" alt="Express" class="icon img-rounded">
+										<img src="image/angular.png" title="Angular" alt="Angular" class="icon img-rounded">
+										<img src="image/darksky.png" title="Dark Sky" alt="Dark Sky" class="icon img-rounded">
+										<img src="image/google_maps.png" title="Google Maps" alt="Google Maps" class="icon img-rounded">
+										<img src="image/chartjs.svg" title="ng2-charts" alt="ng2-charts" class="icon img-rounded">
+										<img src="image/bootstrap.svg" title="Bootstrap" alt="Bootstrap" class="icon img-rounded">
+									</div>
+								</div>
+
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
 					</div>
-				</a>
-				<a name="technologies"></a>
+
+				</div>
+
 				<div id="msr_text" class="modal fade" role="dialog">
 					<div class="modal-dialog modal-lg">
 						<div class="modal-content">
@@ -113,7 +155,7 @@
 					</div>
 
 				</div>
-		</div>
+			</div>
 			<div id="cc_text" class="modal fade" role="dialog">
 				<div class="modal-dialog modal-lg">
 					<div class="modal-content">
@@ -129,114 +171,129 @@
 								<div class="col-sm-6">
 									<p>Cow Chucker is a game about shooting cows at Coding Dojo instructors. For this project I worked with a team and was responsible for cannon mechanics, cameras and general direction.</p>
 									<p><strong>Controls:</strong><br />
-									Arrow Keys: Aim<br />
-									Ctrl: Press to build thrust, release to shoot<br />
-									C: Return to cannon</p>
-									<p>Give it a try! <a href="https://drive.google.com/open?id=0ByahWbJKxTQYZmZQMm1nRnduSE0" target="_blank">Windows 32-bit</a> | <a href="https://drive.google.com/file/d/0ByahWbJKxTQYVjRZdkYtTE1VbHM/view?usp=sharing" target="_blank">Windows 64-bit</a> | <a href="https://drive.google.com/open?id=0ByahWbJKxTQYYVoyeWdEM09wOW8" target="_blank">Mac OSX</a></p>
-									<p><a href="https://github.com/LaezSugam/Cow-Chucker-Test" target="_blank">GitHub</a></p>
+										Arrow Keys: Aim<br />
+										Ctrl: Press to build thrust, release to shoot<br />
+										C: Return to cannon</p>
+										<p>Give it a try! <a href="https://drive.google.com/open?id=0ByahWbJKxTQYZmZQMm1nRnduSE0" target="_blank">Windows 32-bit</a> | <a href="https://drive.google.com/file/d/0ByahWbJKxTQYVjRZdkYtTE1VbHM/view?usp=sharing" target="_blank">Windows 64-bit</a> | <a href="https://drive.google.com/open?id=0ByahWbJKxTQYYVoyeWdEM09wOW8" target="_blank">Mac OSX</a></p>
+										<p><a href="https://github.com/LaezSugam/Cow-Chucker-Test" target="_blank">GitHub</a></p>
+									</div>
 								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-12">
-									<img src="image/unity.png" title="Unity" alt="Unity" class="icon img-rounded">
-									<img src="image/csharp.png" title="C#" alt="C#" class="icon img-rounded">
+								<div class="row">
+									<div class="col-sm-12">
+										<img src="image/unity.png" title="Unity" alt="Unity" class="icon img-rounded">
+										<img src="image/csharp.png" title="C#" alt="C#" class="icon img-rounded">
+									</div>
 								</div>
-							</div>
 
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
 						</div>
 					</div>
+
 				</div>
+
 
 			</div>
 
-			<div id="lo_text" class="modal fade" role="dialog">
-				<div class="modal-dialog modal-lg">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title">Lights Out</h4>
-						</div>
-						<div class="modal-body">
-							<div class="row">
-								<div class="col-sm-6">
-									<img src="image/lo_animation.gif" alt="Lights Out Animated GIF" class="previewGif">
-								</div>
-								<div class="col-sm-6">
-									<p><a href="https://en.wikipedia.org/wiki/Lights_Out_(game)" target="_blank">Lights Out</a> is a puzzle game where the goal is to turn all of the lights off, or in this version turn all red squares into blue squares. Clicking on any square will change the color of the clicked square and all orthogonally adjacent squares. The puzzles are randomly generated and should always be solvable. I referenced <a href="https://www.jaapsch.net/puzzles/lomath.htm" target="_blank">this page</a> for a lot of the information that went into creating this application.</p>
-									<p><a href="https://laezsugam.github.io/ColorPuzzle/" target="_blank">Check it out!</a> | <a href="https://github.com/LaezSugam/ColorPuzzle" target="_blank">GitHub</a></p>
-
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-12">
-									<img src="image/javascript.png" title="JavaScript" alt="JavaScript" class="icon img-rounded">
-									<img src="image/html5.svg" title="HTML" alt="HTML" class="icon img-rounded">
-									<img src="image/css.svg" title="CSS" alt="CSS" class="icon img-rounded">
-									<img src="image/angular.png" title="Angular" alt="Angular" class="icon img-rounded">
-								</div>
-							</div>
-
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-		<div class="section">
 			<div class="row">
+
+				<a data-toggle="modal" href="#lo_text">
+					<div class="col-sm-4">
+						<h4>Lights Out</h4>
+						<img src="image/lo_01.jpg" alt="Lights Out" class="preview">
+					</div>
+				</a>
+				<a name="technologies"></a>
+
+
+
+				<div id="lo_text" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Lights Out</h4>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-sm-6">
+										<img src="image/lo_animation.gif" alt="Lights Out Animated GIF" class="previewGif">
+									</div>
+									<div class="col-sm-6">
+										<p><a href="https://en.wikipedia.org/wiki/Lights_Out_(game)" target="_blank">Lights Out</a> is a puzzle game where the goal is to turn all of the lights off, or in this version turn all red squares into blue squares. Clicking on any square will change the color of the clicked square and all orthogonally adjacent squares. The puzzles are randomly generated and should always be solvable. I referenced <a href="https://www.jaapsch.net/puzzles/lomath.htm" target="_blank">this page</a> for a lot of the information that went into creating this application.</p>
+										<p><a href="https://laezsugam.github.io/ColorPuzzle/" target="_blank">Check it out!</a> | <a href="https://github.com/LaezSugam/ColorPuzzle" target="_blank">GitHub</a></p>
+
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<img src="image/javascript.png" title="JavaScript" alt="JavaScript" class="icon img-rounded">
+										<img src="image/html5.svg" title="HTML" alt="HTML" class="icon img-rounded">
+										<img src="image/css.svg" title="CSS" alt="CSS" class="icon img-rounded">
+										<img src="image/angular.png" title="Angular" alt="Angular" class="icon img-rounded">
+									</div>
+								</div>
+
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+			<div class="section">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3>Technologies</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 text-center">
+						<h4 class="tech-header">Languages</h4>
+						<img src="image/python.svg" title="Python" alt="Python" class="icon img-rounded">
+						<img src="image/javascript.png" title="JavaScript" alt="JavaScript" class="icon img-rounded">
+						<img src="image/html5.svg" title="HTML" alt="HTML" class="icon img-rounded">
+						<img src="image/css.svg" title="CSS" alt="CSS" class="icon img-rounded">
+						<img src="image/csharp.png" title="C#" alt="C#" class="icon img-rounded">
+					</div>
+					<div class="col-sm-4 text-center">
+						<h4 class="tech-header">Frameworks</h4>
+						<img src="image/angular.png" title="Angular" alt="Angular" class="icon img-rounded">
+						<img src="image/node.png" title="Node.js" alt="Node.js" class="icon img-rounded">
+						<img src="image/express.svg" title="Express" alt="Express" class="icon img-rounded">
+						<img src="image/django.png" title="Django" alt="Django" class="icon img-rounded">
+						<img src="image/flask.jpg" title="Flask" alt="Flask" class="icon img-rounded">
+						<img src="image/netcore.jpg" title="ASP.NET Core" alt="ASP.NET Core" class="icon img-rounded">
+					</div>
+					<div class="col-sm-2 text-center">
+						<h4 class="tech-header">Databases</h4>
+						<img src="image/mysql.png" title="MySQL" alt="MySQL" class="icon img-rounded">
+						<img src="image/mongodb.png" title="MongoDB" alt="MongoDB" class="icon img-rounded">
+					</div>
+					<div class="col-sm-2 text-center">
+						<h4 class="tech-header">Others</h4>
+						<img src="image/github.png" title="GitHub" alt="GitHub" class="icon img-rounded">
+						<img src="image/jquery.png" title="jQuery" alt="jQuery" class="icon img-rounded">
+					</div>
+					<a name="about_me"></a>
+				</div>
+			</div>
+
+			<div class="row section">
 				<div class="col-sm-12">
-					<h3>Technologies</h3>
+					<h3>About Me</h3>
+					<p>I'm a web developer with five years experience in digital content production, currently in the greater Seattle area.  I've graduated with a triple Black Belt from Coding Dojo, an immersive web development program, with more than 1,000 hours spent learning and developing web applications using Python, MEAN, and C# ASP.NET Core MVC framework.</p>
+					<p>Find me on:
+						<a href="https://www.linkedin.com/in/william-peterson-b41a617/" target="_blank"><img src="image/linkedin.png" title="LinkedIn" alt="LinkedIn" class="icon img-rounded"></a>
+						<a href="https://github.com/LaezSugam" target="_blank"><img src="image/github.png" title="GitHub" alt="GitHub" class="icon img-rounded"></a>
+					</p>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4 text-center">
-					<h4 class="tech-header">Languages</h4>
-					<img src="image/python.svg" title="Python" alt="Python" class="icon img-rounded">
-					<img src="image/javascript.png" title="JavaScript" alt="JavaScript" class="icon img-rounded">
-					<img src="image/html5.svg" title="HTML" alt="HTML" class="icon img-rounded">
-					<img src="image/css.svg" title="CSS" alt="CSS" class="icon img-rounded">
-					<img src="image/csharp.png" title="C#" alt="C#" class="icon img-rounded">
-				</div>
-				<div class="col-sm-4 text-center">
-					<h4 class="tech-header">Frameworks</h4>
-					<img src="image/angular.png" title="Angular" alt="Angular" class="icon img-rounded">
-					<img src="image/node.png" title="Node.js" alt="Node.js" class="icon img-rounded">
-					<img src="image/express.svg" title="Express" alt="Express" class="icon img-rounded">
-					<img src="image/django.png" title="Django" alt="Django" class="icon img-rounded">
-					<img src="image/flask.jpg" title="Flask" alt="Flask" class="icon img-rounded">
-					<img src="image/netcore.jpg" title="ASP.NET Core" alt="ASP.NET Core" class="icon img-rounded">
-				</div>
-				<div class="col-sm-2 text-center">
-					<h4 class="tech-header">Databases</h4>
-					<img src="image/mysql.png" title="MySQL" alt="MySQL" class="icon img-rounded">
-					<img src="image/mongodb.png" title="MongoDB" alt="MongoDB" class="icon img-rounded">
-				</div>
-				<div class="col-sm-2 text-center">
-					<h4 class="tech-header">Others</h4>
-					<img src="image/github.png" title="GitHub" alt="GitHub" class="icon img-rounded">
-					<img src="image/jquery.png" title="jQuery" alt="jQuery" class="icon img-rounded">
-				</div>
-				<a name="about_me"></a>
 			</div>
 		</div>
-
-		<div class="row section">
-			<div class="col-sm-12">
-				<h3>About Me</h3>
-				<p>I'm a web developer with five years experience in digital content production, currently in the greater Seattle area.  I've graduated with a triple Black Belt from Coding Dojo, an immersive web development program, with more than 1,000 hours spent learning and developing web applications using Python, MEAN, and C# ASP.NET Core MVC framework.</p>
-				<p>Find me on:
-					<a href="https://www.linkedin.com/in/william-peterson-b41a617/" target="_blank"><img src="image/linkedin.png" title="LinkedIn" alt="LinkedIn" class="icon img-rounded"></a>
-					<a href="https://github.com/LaezSugam" target="_blank"><img src="image/github.png" title="GitHub" alt="GitHub" class="icon img-rounded"></a>
-				</p>
-			</div>
-		</div>
-	</div>
-</body>
-</html>
+	</body>
+	</html>
