@@ -55,139 +55,60 @@
 			</div>
 			<div class="row">
 
-				<a data-toggle="modal" href="#gbls_text">
-						<div class="col-sm-4">
-							<h4>Gianb Bomb Loading Screen (WIP)</h4>
-							<img src="image/gbls.jpg" alt="Giant Bomb Loading Screen" class="preview">
-						</div>
-					</a>
-				<a data-toggle="modal" href="#sc_text">
+				<a data-toggle="modal" href="#wordies_text">
 					<div class="col-sm-4">
-						<h4>SkyCast</h4>
-						<img src="image/skycast.jpg" alt="Lights Out" class="preview">
+						<h4>Word Binge CLI Prototype</h4>
+						<img src="image/wordies_animation.gif" alt="Wordies" class="preview">
 					</div>
 				</a>
+				
+				<a data-toggle="modal" href="#lo_text">
+					<div class="col-sm-4">
+						<h4>Lights Out</h4>
+						<img src="image/lo_01.jpg" alt="Lights Out" class="preview">
+					</div>
+				</a>
+				
 				<a data-toggle="modal" href="#cc_text">
 					<div class="col-sm-4">
 						<h4>Cow Chucker</h4>
 						<img src="image/cc_03.jpg" alt="Cow Chucker" class="preview">
 					</div>
 				</a>
+				<!-- POPUPS -->
 
-
-				<div id="sc_text" class="modal fade" role="dialog">
+				<div id="wordies_text" class="modal fade" role="dialog">
 					<div class="modal-dialog modal-lg">
 						<div class="modal-content">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
-								<h4 class="modal-title">SkyCast</h4>
+								<h4 class="modal-title">Word Binge CLI Prototype</h4>
 							</div>
 							<div class="modal-body">
 								<div class="row">
 									<div class="col-sm-6">
-										<img src="image/sc_animation.gif" alt="SkyCast Animated GIF" class="previewGif">
+										<img src="image/wordies_animation.gif" alt="Wordies" class="previewGif">
 									</div>
 									<div class="col-sm-6">
-										<p>SkyCast is a weather forecast app created using the <a href="https://darksky.net/dev" target="_blank">Dark Sky API</a> and the <a href="https://developers.google.com/apis-explorer/#p/" target="_blank">Google Maps, Google Geolocation, and Google Geocoding APIs</a>. To render the charts I used the <a href="https://valor-software.com/ng2-charts/" target="_blank">ng2-charts</a> library. Using the app you can get today, tomorrow, and next week's forecast either for your location or a searched location, or you can do a search of historic data to see the weather for a specific place and date.</p>
-										<p><a href="https://intense-castle-51563.herokuapp.com" target="_blank">Check it out!</a> | <a href="https://github.com/LaezSugam/SkyCast" target="_blank">GitHub</a></p>
+										<p>The Word Binge Command Line Interface Prototype is an early test of a Wordle variant currently
+											in development for Android using Xamarin. This prototype contains three game types.</p>
+										<p>Wordle, based on the popular browser-based game.</p>
+										<p>Wordies, a variant where you will be guessing words of varying lengths. You will have five words to guess
+											and start with 15 guesses, earning more guesses for each correct word.
+										</p>
+										<p>Infinite, a version of Wordies where you can continue to play until you have run out of guesses.</p>
+										<p>Once starting a game, you can type in your guess. Letters highlighted in yellow are letters that are in
+											the word but are currently in the wrong position. Letters highlighted in green are correct and in the correct position.
+										</p>
+										<p>Give it a try! <a href="apps/Wordies.zip" target="_blank">Windows</a>
+										<p><a href="https://github.com/LaezSugam/Wordies-CLI" target="_blank">GitHub</a></p>
 
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-sm-12">
-										<img src="image/javascript.png" title="JavaScript" alt="JavaScript" class="icon img-rounded">
-										<img src="image/html5.svg" title="HTML" alt="HTML" class="icon img-rounded">
-										<img src="image/css.svg" title="CSS" alt="CSS" class="icon img-rounded">
-										<img src="image/node.png" title="Node.js" alt="Node.js" class="icon img-rounded">
-										<img src="image/express.svg" title="Express" alt="Express" class="icon img-rounded">
-										<img src="image/angular.png" title="Angular" alt="Angular" class="icon img-rounded">
-										<img src="image/darksky.png" title="Dark Sky" alt="Dark Sky" class="icon img-rounded">
-										<img src="image/google_maps.png" title="Google Maps" alt="Google Maps" class="icon img-rounded">
-										<img src="image/chartjs.svg" title="ng2-charts" alt="ng2-charts" class="icon img-rounded">
-										<img src="image/bootstrap.svg" title="Bootstrap" alt="Bootstrap" class="icon img-rounded">
-									</div>
-								</div>
-
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-
-
-				<div id="gbls_text" class="modal fade" role="dialog">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-								<h4 class="modal-title">Giant Bomb Loading Screen (Work-in-Progress)</h4>
-							</div>
-							<div class="modal-body">
-								<div class="row">
-									<div class="col-sm-6">
-										<img src="image/gbls.jpg" alt="Giant Bomb Loading Screen" class="previewGif">
-									</div>
-									<div class="col-sm-6">
-										<p>Giant Bomb Loading Screen emulates the look of a video game loading screen using the Giant Bomb API for images and text.</p>
-										<p><a href="https://gbls.herokuapp.com" target="_blank">Check It Out!</a></p>
-
-									</div>
-								</div>
-								<div class="row">
-										<div class="col-sm-12">
-											<img src="image/javascript.png" title="JavaScript" alt="JavaScript" class="icon img-rounded">
-											<img src="image/html5.svg" title="HTML" alt="HTML" class="icon img-rounded">
-											<img src="image/css.svg" title="CSS" alt="CSS" class="icon img-rounded">
-											<img src="image/node.png" title="Node.js" alt="Node.js" class="icon img-rounded">
-											<img src="image/express.svg" title="Express" alt="Express" class="icon img-rounded">
-										</div>
-								</div>
-
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-
-
-
-				<div id="msr_text" class="modal fade" role="dialog">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-								<h4 class="modal-title">Maybe Spring Rolls</h4>
-							</div>
-							<div class="modal-body">
-								<div class="row">
-									<div class="col-sm-6">
-										<img src="image/msr_animation.gif" alt="Maybe Spring Rolls Animated GIF" class="previewGif">
-									</div>
-									<div class="col-sm-6">
-										<p>Maybe Spring Rolls is an application that decides where to eat for you. The goal of the project was to solve the problem of indecisiveness at dinner time. You can set parameters such as the distance you're willing to travel and the type of food you're in the mood for and it will randomly choose a location using the Google Places API.  You can also log in and store a list of meals you can make at home so that in case you've been too picky it will choose something you can make at home.</p>
-										<p><a href="https://github.com/LaezSugam/Maybe_Spring_Rolls" target="_blank">GitHub</a></p>
-
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-12">
-										<img src="image/python.svg" title="Python" alt="Python" class="icon img-rounded">
-										<img src="image/django.png" title="Django" alt="Django" class="icon img-rounded">
-										<img src="image/javascript.png" title="JavaScript" alt="JavaScript" class="icon img-rounded">
-										<img src="image/google_maps.png" title="Google Maps" alt="Google Maps" class="icon img-rounded">
-										<img src="image/google_places.svg" title="Google Places" alt="Google Places" class="icon img-rounded">
-										<img src="image/mysql.png" title="MySQL" alt="MySQL" class="icon img-rounded">
-										<img src="image/html5.svg" title="HTML" alt="HTML" class="icon img-rounded">
-										<img src="image/css.svg" title="CSS" alt="CSS" class="icon img-rounded">
-										<img src="image/jquery.png" title="jQuery" alt="jQuery" class="icon img-rounded">
+										<img src="image/csharp.png" title="C#" alt="C#" class="icon img-rounded">
+										<img src="image/netcore.jpg" title=".NET Core" alt=".NET Core" class="icon img-rounded">
 									</div>
 								</div>
 
@@ -233,38 +154,6 @@
 					</div>
 
 				</div>
-			</div>
-
-
-
-
-
-			</div>
-
-			<div class="row">		
-				<a data-toggle="modal" href="#lo_text">
-						<div class="col-sm-4">
-							<h4>Lights Out</h4>
-							<img src="image/lo_01.jpg" alt="Lights Out" class="preview">
-						</div>
-					</a>		
-				<a data-toggle="modal" href="#msr_text">
-					<div class="col-sm-4">
-						<h4>Maybe Spring Rolls</h4>
-						<img src="image/msr_demo.jpg" alt="Maybe Spring Rolls - Map With Taco Time" class="preview">
-					</div>
-				</a>
-				<a data-toggle="modal" href="#gd_text">
-					<div class="col-sm-4">
-						<h4>Grocery Dash (Work-in-Progress)</h4>
-						<img src="image/gd_wireframe_demo.jpg" alt="Grocery Dash" class="preview">
-					</div>
-				</a>
-
-
-				<a name="technologies"></a>
-
-
 
 				<div id="lo_text" class="modal fade" role="dialog">
 					<div class="modal-dialog modal-lg">
@@ -341,6 +230,176 @@
 					</div>
 
 
+				<div id="sc_text" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">SkyCast</h4>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-sm-6">
+										<img src="image/sc_animation.gif" alt="SkyCast Animated GIF" class="previewGif">
+									</div>
+									<div class="col-sm-6">
+										<p>SkyCast is a weather forecast app created using the <a href="https://darksky.net/dev" target="_blank">Dark Sky API</a> and the <a href="https://developers.google.com/apis-explorer/#p/" target="_blank">Google Maps, Google Geolocation, and Google Geocoding APIs</a>. To render the charts I used the <a href="https://valor-software.com/ng2-charts/" target="_blank">ng2-charts</a> library. Using the app you can get today, tomorrow, and next week's forecast either for your location or a searched location, or you can do a search of historic data to see the weather for a specific place and date.</p>
+										<!-- <p><a href="https://intense-castle-51563.herokuapp.com" target="_blank">Check it out!</a> | --><a href="https://github.com/LaezSugam/SkyCast" target="_blank">GitHub</a></p>
+
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<img src="image/javascript.png" title="JavaScript" alt="JavaScript" class="icon img-rounded">
+										<img src="image/html5.svg" title="HTML" alt="HTML" class="icon img-rounded">
+										<img src="image/css.svg" title="CSS" alt="CSS" class="icon img-rounded">
+										<img src="image/node.png" title="Node.js" alt="Node.js" class="icon img-rounded">
+										<img src="image/express.svg" title="Express" alt="Express" class="icon img-rounded">
+										<img src="image/angular.png" title="Angular" alt="Angular" class="icon img-rounded">
+										<img src="image/darksky.png" title="Dark Sky" alt="Dark Sky" class="icon img-rounded">
+										<img src="image/google_maps.png" title="Google Maps" alt="Google Maps" class="icon img-rounded">
+										<img src="image/chartjs.svg" title="ng2-charts" alt="ng2-charts" class="icon img-rounded">
+										<img src="image/bootstrap.svg" title="Bootstrap" alt="Bootstrap" class="icon img-rounded">
+									</div>
+								</div>
+
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+
+				<div id="gbls_text" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Giant Bomb Loading Screen (Work-in-Progress)</h4>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-sm-6">
+										<img src="image/gbls.jpg" alt="Giant Bomb Loading Screen" class="previewGif">
+									</div>
+									<div class="col-sm-6">
+										<p>Giant Bomb Loading Screen emulates the look of a video game loading screen using the Giant Bomb API for images and text.</p>
+										<!-- <p><a href="https://gbls.herokuapp.com" target="_blank">Check It Out!</a></p> -->
+										<p><a href="https://github.com/LaezSugam/gbls" target="_blank">GitHub</a></p>
+
+									</div>
+								</div>
+								<div class="row">
+										<div class="col-sm-12">
+											<img src="image/javascript.png" title="JavaScript" alt="JavaScript" class="icon img-rounded">
+											<img src="image/html5.svg" title="HTML" alt="HTML" class="icon img-rounded">
+											<img src="image/css.svg" title="CSS" alt="CSS" class="icon img-rounded">
+											<img src="image/node.png" title="Node.js" alt="Node.js" class="icon img-rounded">
+											<img src="image/express.svg" title="Express" alt="Express" class="icon img-rounded">
+										</div>
+								</div>
+
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+
+
+				<div id="msr_text" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Maybe Spring Rolls</h4>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-sm-6">
+										<img src="image/msr_animation.gif" alt="Maybe Spring Rolls Animated GIF" class="previewGif">
+									</div>
+									<div class="col-sm-6">
+										<p>Maybe Spring Rolls is an application that decides where to eat for you. The goal of the project was to solve the problem of indecisiveness at dinner time. You can set parameters such as the distance you're willing to travel and the type of food you're in the mood for and it will randomly choose a location using the Google Places API.  You can also log in and store a list of meals you can make at home so that in case you've been too picky it will choose something you can make at home.</p>
+										<p><a href="https://github.com/LaezSugam/Maybe_Spring_Rolls" target="_blank">GitHub</a></p>
+
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<img src="image/python.svg" title="Python" alt="Python" class="icon img-rounded">
+										<img src="image/django.png" title="Django" alt="Django" class="icon img-rounded">
+										<img src="image/javascript.png" title="JavaScript" alt="JavaScript" class="icon img-rounded">
+										<img src="image/google_maps.png" title="Google Maps" alt="Google Maps" class="icon img-rounded">
+										<img src="image/google_places.svg" title="Google Places" alt="Google Places" class="icon img-rounded">
+										<img src="image/mysql.png" title="MySQL" alt="MySQL" class="icon img-rounded">
+										<img src="image/html5.svg" title="HTML" alt="HTML" class="icon img-rounded">
+										<img src="image/css.svg" title="CSS" alt="CSS" class="icon img-rounded">
+										<img src="image/jquery.png" title="jQuery" alt="jQuery" class="icon img-rounded">
+									</div>
+								</div>
+
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				
+			</div>
+
+
+
+
+
+			</div>
+
+			<div class="row">		
+				
+				<a data-toggle="modal" href="#sc_text">
+					<div class="col-sm-4">
+						<h4>SkyCast</h4>
+						<img src="image/skycast.jpg" alt="Lights Out" class="preview">
+					</div>
+				</a>
+				
+				<a data-toggle="modal" href="#msr_text">
+					<div class="col-sm-4">
+						<h4>Maybe Spring Rolls</h4>
+						<img src="image/msr_demo.jpg" alt="Maybe Spring Rolls - Map With Taco Time" class="preview">
+					</div>
+				</a>
+				
+				<a data-toggle="modal" href="#gbls_text">
+					<div class="col-sm-4">
+						<h4>Gianb Bomb Loading Screen (WIP)</h4>
+						<img src="image/gbls.jpg" alt="Giant Bomb Loading Screen" class="preview">
+					</div>
+				</a>
+
+				<!-- <a data-toggle="modal" href="#gd_text">
+					<div class="col-sm-4">
+						<h4>Grocery Dash (Work-in-Progress)</h4>
+						<img src="image/gd_wireframe_demo.jpg" alt="Grocery Dash" class="preview">
+					</div>
+				</a> -->
+
+
+				<a name="technologies"></a>
+
+				
+
 			<div class="section">
 				<div class="row">
 					<div class="col-sm-12">
@@ -348,30 +407,34 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-4 text-center">
+					<div class="col-sm-3 text-center">
 						<h4 class="tech-header">Languages</h4>
-						<img src="image/python.svg" title="Python" alt="Python" class="icon img-rounded">
+						<img src="image/csharp.png" title="C#" alt="C#" class="icon img-rounded">
+						<!-- <img src="image/python.svg" title="Python" alt="Python" class="icon img-rounded"> -->
 						<img src="image/javascript.png" title="JavaScript" alt="JavaScript" class="icon img-rounded">
+						<img src="image/typescript.png" title="TypeScript" alt="TypeScript" class="icon img-rounded">
 						<img src="image/html5.svg" title="HTML" alt="HTML" class="icon img-rounded">
 						<img src="image/css.svg" title="CSS" alt="CSS" class="icon img-rounded">
-						<img src="image/csharp.png" title="C#" alt="C#" class="icon img-rounded">
+						
 					</div>
-					<div class="col-sm-4 text-center">
+					<div class="col-sm-3 text-center">
 						<h4 class="tech-header">Frameworks</h4>
+						<img src="image/dotnet.png" title=".NET Framework" alt=".NET Framework" class="icon img-rounded">
 						<img src="image/angular.png" title="Angular" alt="Angular" class="icon img-rounded">
 						<img src="image/node.png" title="Node.js" alt="Node.js" class="icon img-rounded">
-						<img src="image/express.svg" title="Express" alt="Express" class="icon img-rounded">
+						<!-- <img src="image/express.svg" title="Express" alt="Express" class="icon img-rounded">
 						<img src="image/django.png" title="Django" alt="Django" class="icon img-rounded">
-						<img src="image/flask.jpg" title="Flask" alt="Flask" class="icon img-rounded">
+						<img src="image/flask.jpg" title="Flask" alt="Flask" class="icon img-rounded"> -->
 						<img src="image/netcore.jpg" title="ASP.NET Core" alt="ASP.NET Core" class="icon img-rounded">
 					</div>
-					<div class="col-sm-2 text-center">
+					<div class="col-sm-3 text-center">
 						<h4 class="tech-header">Databases</h4>
 						<img src="image/mysql.png" title="MySQL" alt="MySQL" class="icon img-rounded">
 						<img src="image/mongodb.png" title="MongoDB" alt="MongoDB" class="icon img-rounded">
 					</div>
-					<div class="col-sm-2 text-center">
+					<div class="col-sm-3 text-center">
 						<h4 class="tech-header">Others</h4>
+						<img src="image/azure_devops.jpg" title="Azure DevOps/TFS/VSTS" alt="Azure DevOps/TFS/VSTS" class="icon img-rounded">
 						<img src="image/github.png" title="GitHub" alt="GitHub" class="icon img-rounded">
 						<img src="image/jquery.png" title="jQuery" alt="jQuery" class="icon img-rounded">
 					</div>
@@ -382,7 +445,11 @@
 			<div class="row section">
 				<div class="col-sm-12">
 					<h3>About Me</h3>
-					<p>I'm a web developer with five years experience in digital content production, currently in the greater Seattle area.  I've graduated with a triple Black Belt from Coding Dojo, an immersive web development program, with more than 1,000 hours spent learning and developing web applications using Python, MEAN, and C# ASP.NET Core MVC framework.</p>
+					<p>I am a software developer with over five years experience in development and five years experience in digital content production.</p>
+					<p>Professionally, I have primarily worked on MES software in C# .NET Framework and Windows Forms/WPF. I have also worked
+						on browser-based applications using TypeScript/JavaScript, and a CMS using C#, SQL, JavaScript, MongoDB, and GraphQL.
+					</p>
+					<p><a href="docs/Resume.pdf" target="_blank">Resume</a></p>
 					<p>Find me on:
 						<a href="https://www.linkedin.com/in/william-peterson-b41a617/" target="_blank"><img src="image/linkedin.png" title="LinkedIn" alt="LinkedIn" class="icon img-rounded"></a>
 						<a href="https://github.com/LaezSugam" target="_blank"><img src="image/github.png" title="GitHub" alt="GitHub" class="icon img-rounded"></a>
